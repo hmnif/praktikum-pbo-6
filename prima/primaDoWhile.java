@@ -10,21 +10,30 @@ public class primaDoWhile {
       }
       i++;
     } while (i <= maks);
+
+    System.out.println("\nBukan bilangan prima");
+    i = 2;
+    do {
+      if (!isPrima(i)) {
+        System.out.print(i + " ");
+      }
+      i++;
+    } while (i <= maks);
   }
 
-  public static boolean isPrima(int i) {
-    if (i <= 1) {
+  public static boolean isPrima(int angka) {
+    if (angka <= 1) {
       return false;
     }
 
     int j = 2;
 
     do {
-      if (i % j == 0) {
+      if (angka % j == 0) {
         return false;
       }
       j++;
-    } while (j < i);
+    } while (j < angka);
 
     return true;
   }

@@ -11,6 +11,15 @@ public class primaWhile {
       }
       i++;
     }
+
+    System.out.println("\nBukan bilangan prima");
+    i = 2;
+    while (i <= maks) {
+      if (!isPrima(i)) {
+        System.out.print(i + " ");
+      }
+      i++;
+    }
   }
 
   public static boolean isPrima(int i) {

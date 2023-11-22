@@ -9,6 +9,13 @@ public class primaFor {
       }
     }
 
+    System.out.println("\nBukan bilangan prima");
+    for (int i = 2; i <= maks; i++) {
+      if (!isPrima(i)) {
+        System.out.print(i + " ");
+      }
+    }
+
   }
 
   public static boolean isPrima(int i) {
